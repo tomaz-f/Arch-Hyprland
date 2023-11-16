@@ -1,0 +1,2 @@
+# Arch-Hyprland
+hyprdots
