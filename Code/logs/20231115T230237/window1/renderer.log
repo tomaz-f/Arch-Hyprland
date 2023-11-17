@@ -1,0 +1,3 @@
+2023-11-15 23:02:37.660 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-dotnettools.dotnet-interactive-vscode' wants API proposal 'languageConfigurationAutoClosingPairs' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-11-15 23:02:37.709 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ftarch/Games/star-citizen/drive_c/Program Files/Roberts Space Industries/StarCitizen/LIVE/USER.cfg","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2023-11-15 23:02:40.867 [info] [perf] Render performance baseline is 55ms

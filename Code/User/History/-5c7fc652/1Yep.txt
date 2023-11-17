@@ -1,0 +1,34 @@
+notebook = 2000
+pc dell = 300
+kit intel = 300
+placa de video amd = 150
+microfone = 100
+guitarra = 500
+rack = 200
+fone = 150
+pedais {
+    500 = mooer pre amp
+    100 = pedal afinador
+    100 = chorus
+    100 = comp
+    150 = pure sky
+    300 = double barrel
+    120 = delay/reverb
+    100 = fonte landscape
+    150 = fonte isolada
+    50  = cabos e plugs
+}
+mesa = 100
+fonte = 150
+memoria = 150
+gabinete = 120
+ssd = 100
+switch = 50
+mousepad = 50
+hd = 100
+guitarra tagima = 300
+4 suporte = 80
+cadeira = 1500
+mouse logitech = 30
+mouse duex = 20
+base notebook = 50

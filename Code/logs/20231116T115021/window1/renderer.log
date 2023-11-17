@@ -1,0 +1,15 @@
+2023-11-16 11:50:22.880 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-dotnettools.dotnet-interactive-vscode' wants API proposal 'languageConfigurationAutoClosingPairs' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-11-16 11:50:26.104 [info] [perf] Render performance baseline is 38ms
+2023-11-16 11:50:44.467 [error] Unable to read file '/etc/sddm.conf.d/sddm.conf' (Error: File not modified since): Error: Unable to read file '/etc/sddm.conf.d/sddm.conf' (Error: File not modified since)
+    at n.F (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:645:16688)
+    at n.D (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:645:16576)
+    at async b.M (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2418:42819)
+    at async b.readStream (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2418:42576)
+    at async P.Cb (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2407:29172)
+    at async P.resolve (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2407:27619)
+    at async vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2418:38687
+2023-11-16 11:52:59.405 [info] Settings Sync: Updating due to change in sessions
+2023-11-16 11:53:15.714 [error] [Extension Host] (node:57892) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2023-11-16 11:53:19.343 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-dotnettools.dotnet-interactive-vscode' wants API proposal 'languageConfigurationAutoClosingPairs' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-11-16 11:53:22.254 [info] [perf] Render performance baseline is 49ms

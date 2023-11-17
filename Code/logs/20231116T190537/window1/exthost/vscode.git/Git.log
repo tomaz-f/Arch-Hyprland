@@ -1,0 +1,13 @@
+2023-11-16 19:05:38.904 [info] Log level: Info
+2023-11-16 19:05:38.904 [info] Validating found git in: "git"
+2023-11-16 19:05:38.941 [info] Using git "2.42.1" from "git"
+2023-11-16 19:05:38.965 [info] > git rev-parse --show-toplevel [9ms]
+2023-11-16 19:05:38.976 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2023-11-16 19:05:38.999 [info] Open repository: /home/ftarch/Repos/Arch-Hyprland
+2023-11-16 19:05:39.019 [info] > git config --get commit.template [8ms]
+2023-11-16 19:05:39.060 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [14ms]
+2023-11-16 19:05:39.072 [info] > git status -z -uall [4ms]
+2023-11-16 19:05:39.098 [info] > git config --get commit.template [3ms]
+2023-11-16 19:05:39.108 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2023-11-16 19:05:39.139 [info] > git status -z -uall [24ms]
+2023-11-16 19:05:39.548 [info] > git check-ignore -v -z --stdin [2ms]

@@ -1,0 +1,42 @@
+2023-11-16 11:50:23.920 [info] Log level: Info
+2023-11-16 11:50:23.920 [info] Validating found git in: "git"
+2023-11-16 11:50:23.920 [info] Using git "2.42.1" from "git"
+2023-11-16 11:50:23.920 [info] > git rev-parse --show-toplevel [5ms]
+2023-11-16 11:50:23.920 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-11-16 11:50:42.646 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-16 11:50:42.646 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-11-16 11:50:42.705 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-16 11:50:42.705 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-11-16 11:50:44.444 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-16 11:50:44.444 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-11-16 11:53:17.152 [info] > git clone https://github.com/tomaz-f/Arch-Hyprland.git /home/ftarch/Repos/Arch-Hyprland --progress [1476ms]
+2023-11-16 11:53:17.152 [info] Cloning into '/home/ftarch/Repos/Arch-Hyprland'...
+remote: Enumerating objects: 3, done.        
+remote: Counting objects:  33% (1/3)        remote: Counting objects:  66% (2/3)        remote: Counting objects: 100% (3/3)        remote: Counting objects: 100% (3/3), done.        
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0        
+Receiving objects:  33% (1/3)Receiving objects:  66% (2/3)Receiving objects: 100% (3/3)Receiving objects: 100% (3/3), done.
+2023-11-16 11:53:20.088 [info] Log level: Info
+2023-11-16 11:53:20.088 [info] Validating found git in: "git"
+2023-11-16 11:53:20.088 [info] Using git "2.42.1" from "git"
+2023-11-16 11:53:20.088 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-16 11:53:20.088 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2023-11-16 11:53:20.088 [info] Open repository: /home/ftarch/Repos/Arch-Hyprland
+2023-11-16 11:53:20.088 [info] > git config --get commit.template [6ms]
+2023-11-16 11:53:20.088 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2023-11-16 11:53:20.088 [info] > git status -z -uall [4ms]
+2023-11-16 11:53:20.105 [info] > git config --get commit.template [12ms]
+2023-11-16 11:53:20.122 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2023-11-16 11:53:20.130 [info] > git status -z -uall [2ms]
+2023-11-16 11:53:20.627 [info] > git check-ignore -v -z --stdin [3ms]
+2023-11-16 11:53:31.211 [info] > git config --get commit.template [12ms]
+2023-11-16 11:53:31.212 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2023-11-16 11:53:31.221 [info] > git status -z -uall [1ms]
+2023-11-16 11:53:56.182 [info] > git rev-parse --show-toplevel [1ms]
+2023-11-16 11:53:56.182 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-11-16 11:54:38.047 [info] > git rev-parse --show-toplevel [2ms]
+2023-11-16 11:54:38.047 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
