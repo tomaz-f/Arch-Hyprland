@@ -123,7 +123,7 @@
 
     ### Text ###
 
-    font = mononoki Nerd Font 8
+    font = CaskaydiaCove Nerd Font Mono 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -451,15 +451,15 @@
     #default_icon = /path/to/icon
 
 [urgency_low]
-    background = "#2B5A8F"
-    foreground = "#546193"
-    frame_color = "#546193"
+    background = "#335983"
+    foreground = "#4F6185"
+    frame_color = "#4F6185"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
 
 [urgency_normal]
-    background = "#14223F"
-    foreground = "#6E8EBE"
-    frame_color = "#6E8EBE"
+    background = "#2E4164"
+    foreground = "#A55E76"
+    frame_color = "#A55E76"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10

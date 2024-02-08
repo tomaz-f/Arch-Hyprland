@@ -2,7 +2,7 @@
 0|Catppuccin-Latte|~/.config/swww/Catppuccin-Latte/jormungandr.jpg
 0|Decay-Green|~/.config/swww/Decay-Green/night_city.png
 0|Rose-Pine|~/.config/swww/Rose-Pine/mountain_dragon_pink.jpg
-1|Tokyo-Night|~/.config/swww/Tokyo-Night/after_sunset_landscape_2_by_rmradev_dfenf9g.jpg
+1|Tokyo-Night|~/.config/swww/Tokyo-Night/experience.jpg
 0|Material-Sakura|~/.config/swww/Material-Sakura/material_pastel_4.jpg
 0|Graphite-Mono|~/.config/swww/Graphite-Mono/spring_bloom.jpg
 0|Cyberpunk-Edge|~/.config/swww/Cyberpunk-Edge/david.jpg
