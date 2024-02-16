@@ -9,7 +9,6 @@ if [[ "$UID" -ne 0 ]]; then
 fi
 
 ### Config options
-diskformat="nvme" ### (nvme, vda, sda)
 target="/dev/nvme0n1"
 rootmnt="/mnt"
 locale="en_US.UTF-8"
@@ -42,9 +41,8 @@ pacstrappacs=(
     git
     unzip
     networkmanager
-    sudo 
-    )
-
+    sudo
+    )  
 ### Desktop packages #####
 guipacs=(
 	kitty 
@@ -52,14 +50,17 @@ guipacs=(
 	nitch
 	mousepad
  	sbctl
+    bpytop
+    dolphin
+    firefox
 	)
 
 # Partition
 echo "Creating partitions..."
 sgdisk -Z "$target"
 sgdisk \
-    -n1:0:+512M  -t1:ef00 -c1:EFI \
-    -N2          -t2:8304 -c2:LINUXROOT  \
+    -n1:0:+512M  -t1:ef00 -c1:EFISYSTEM \
+    -N2          -t2:8304 -c2:linux \
     "$target"
 # Reload partition table
 sleep 2
@@ -68,31 +69,23 @@ sleep 2
 echo "Encrypting root partition..."
 #Encrypt the root partition. If badidea=yes, then pipe cryptpass and carry on, if not, prompt for it
 if [[ "$badidea" == "yes" ]]; then
-echo -n "$crypt_password" | cryptsetup luksFormat --type luks2 /dev/nvme0n1p2 -
-echo -n "$crypt_password" | cryptsetup luksOpen /dev/nvme0n1p2 linuxroot -
+echo -n "$crypt_password" | cryptsetup luksFormat --type luks2 /dev/disk/by-partlabel/linux -
+echo -n "$crypt_password" | cryptsetup luksOpen /dev/disk/by-partlabel/linux root -
 else
-cryptsetup luksFormat --type luks2 /dev/nvme0n1p2
-cryptsetup luksOpen /dev/nvme0n1p2 linuxroot
+cryptsetup luksFormat --type luks2 /dev/disk/by-partlabel/linux
+cryptsetup luksOpen /dev/disk/by-partlabel/linux root
 fi
 echo "Making File Systems..."
 # Create file systems
-mkfs.vfat -F32 -n EFI /dev/nvme0n1p1
-if [["$diskformat" == "nvme"]]; then
-mkfs.btrfs -f -L linuxroot /dev/mapper/linuxroot
-else
-mkfs.ext4 -L linux /dev/mapper/linuxroot
-fi
+mkfs.vfat -F32 -n EFISYSTEM /dev/disk/by-partlabel/EFISYSTEM
+mkfs.ext4 -L linux /dev/mapper/root
 # mount the root, and create + mount the EFI directory
 echo "Mounting File Systems..."
-mount /dev/mapper/linuxroot "$rootmnt"
+mount /dev/mapper/root "$rootmnt"
 mkdir "$rootmnt"/efi -p
-mount /dev/nvme0n1p1 "$rootmnt"/efi
-btrfs subvolume create /mnt/home
-btrfs subvolume create /mnt/srv
-btrfs subvolume create /mnt/var
-btrfs subvolume create /mnt/var/log
-btrfs subvolume create /mnt/var/cache
-btrfs subvolume create /mnt/var/tmp
+mount -t vfat /dev/disk/by-partlabel/EFISYSTEM "$rootmnt"/efi
+
+
 
 #Update pacman mirrors and then pacstrap base install
 echo "Pacstrapping..."
